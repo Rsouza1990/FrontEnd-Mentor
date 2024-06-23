@@ -1,109 +1,97 @@
 @charset "UTF-8";
 
+/* Importando as fontes */
 @font-face {
     font-family: 'Outfit';
     src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: 'Young serif';
+    font-family: 'Young Serif';
     src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
-
-
-
-:root{
-    --cor1:hsl(14, 45%, 36%);
-    --cor2:hsl(332, 51%, 32%);
-
+/* Variáveis de cores */
+:root {
+    --cor1: hsl(14, 45%, 36%);
+    --cor2: hsl(332, 51%, 32%);
     --White: hsl(0, 0%, 100%);
     --Rose-White: hsl(330, 100%, 98%);
     --Eggshell: hsl(30, 54%, 90%);
     --Light-Grey: hsl(30, 18%, 87%);
     --Wenge-Brown: hsl(30, 10%, 34%);
     --Dark-Charcoal: hsl(24, 5%, 18%);
-
 }
 
 
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-ul li::marker{
-    color: hsl(14, 45%, 36%);
-}
-
-ol li::marker {
-    color: hsl(14, 45%, 36%);
-    font-weight: bold;
-}
-
-ol span{
-    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: var(--Eggshell);
-    font-family: 'Outfit';
+    font-family: 'Outfit', sans-serif; 
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    height: auto;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 10%;
-    padding: 30px;
-    width: 765px;
+    background-color: var(--White);
+    margin: 10px;
+    padding: 20px;
     border-radius: 25px;
 }
+
 
 main img {
-    display: flex;
-    justify-content: flex-start;
+    width: 100%;
     border-radius: 25px;
-    padding: 10px;
+    margin-bottom: 15px;
 }
+
 
 main p {
-    font-family: 'Outfit';
     font-size: 1em;
     color: var(--Wenge-Brown);
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 
-main h1{
-    font-size: 2.7em;
+main h1 {
+    font-size: 2.2em;
     color: var(--Dark-Charcoal);
-    margin: 10px;
-    font-family: 'Young Serif';
+    margin-bottom: 15px;
+    font-family: 'Young Serif', sans-serif; 
     font-weight: 300;
 }
 
-main li{
-    font-family: 'Outfit';
-    font-size: 1em;
+
+main ul,
+main ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
-.preparation{
+/* Estilos para itens de lista */
+main li {
+    font-size: 1em;
+    color: var(--Wenge-Brown);
+}
+
+/* Estilos específicos para a seção de preparação */
+.preparation {
     background: var(--Rose-White);
     border-radius: 0.75rem;
     margin-top: 2rem;
-    padding: 1.75rem;
+    padding: 1.5rem;
     margin-bottom: 2rem;
-    padding: 1.5em 1.5em;
 }
 
-.preparation h3{
+.preparation h3 {
     color: var(--cor2);
-    font-weight: 400;
     font-size: 1.3em;
     margin-bottom: 0.7em;
 }
@@ -114,92 +102,82 @@ main li{
 
 .preparation li {
     color: var(--Wenge-Brown);
-    font-family: 'Outfit';
     font-size: 1em;
-    font-size: normal;
-    font-weight: 400;
     line-height: 150%;
-    padding: 0.5em 0.5em;
+    padding: 0.5em 0;
 }
 
 h2 {
     color: var(--cor1);
-    margin-bottom: 1.5rem;
     margin-top: 2rem;
-    font-family: 'Young Serif';
+    margin-bottom: 1rem;
+    font-size: 1.8em;
+    font-family: 'Young Serif', sans-serif; 
     font-weight: 400;
-    line-height: 100%;
-    border-top: 1px solid #E3ddd7;
+    line-height: 3.2;
+    border-top: 1px solid var(--Light-Grey);
 }
+
 
 .ingredients h2 {
     border-top: none;
 }
 
 .ingredients ul {
-    margin-bottom: 1.5rem;
     margin-left: 1.3rem;
 }
 
 .ingredients li {
     color: var(--Wenge-Brown);
-    font-family: "Outfit";
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 150%;
     padding: 5px;
 }
 
 
 .instructions h2 {
-    margin-top: 5px;
-    line-height: 100px;
-    margin-bottom: -6px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8em;
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    line-height: 3.2;
 }
 
-.instructions ol{
+.instructions ol {
     color: var(--Wenge-Brown);
-    font-family: "Outfit", sans-serif;
     font-size: 1em;
     font-weight: 400;
-    line-height: 1.75em;
-    padding: 0.5em 1.5em;
-    margin-top: -25px;
+    line-height: 1.75;
+    padding: 0.5em 1em;
 }
 
-.nutrition h2{
-    margin-top: 5px;
-    line-height: 100px;
-    margin-bottom: -25px;
+.nutrition h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8em;
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    line-height: 3.2;
 }
 
 .nutrition p {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-indent: -0.7em;
-    font-family: "Outfit";
-    font-weight: 400;
 }
 
 .nutrition table {
     width: 100%;
     text-align: left;
+    margin-bottom: 20px;
 }
 
-.nutrition table th {
-    width: 50%;
+.nutrition table th,
+.nutrition table td {
     border-bottom: 1px solid var(--Light-Grey);
     font-weight: 400;
-    padding: 0.9em;
-}
-
-.nutrition table td {
-    width: 50%;
-    border-bottom: 1px solid var(--Light-Grey);
-    font-weight: 700;
-    color: var(--cor1);
-    padding: 0.9em;
+    padding: 0.7em;
 }
 
 .nutrition table tr:first-child th,
@@ -213,38 +191,37 @@ h2 {
     padding-bottom: 0;
 }
 
-.attribution {
-    background-color: rgba(0, 0, 0, 0.075); 
-    font-size: 16px; 
-    text-align: center;
- }
 
-.attribution a {
-    color: hsl(228, 45%, 44%); 
+.attribution {
+    background-color: rgba(0, 0, 0, 0.075);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
 }
 
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
-@media screen and (max-width: 390px) {
-    body {
-        background-color: var(--white);
-    }
-
+@media screen and (max-width: 768px) {
     main {
         width: 100%;
         margin: 0;
-        background-color: var(--white);
-        padding: 0;
+        margin-top: 0;
         border-radius: 0;
-        padding: 0 2em;
+        padding-top: 0;
     }
-
+    
+    main img {
+        margin-bottom: 10px;
+        border-radius: 0;
+        width: auto;
+        margin: -20px;
+    }
+    
     main h1 {
         font-size: 2em;
+        margin-top: 30px;
     }
-
-    main img {
-        border-radius: 0;
-        min-width: 375px;
-        max-width: 1440px;
-    }
+    
 }
