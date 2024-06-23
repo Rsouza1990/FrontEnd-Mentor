@@ -226,7 +226,9 @@ h2 {
 
 @media screen and (max-width: 390px) {
     body {
-        background-color: var(--white); 
+        background-color: var(--white);
+        margin: 0;
+        padding: 0; 
     }
 
     main {
