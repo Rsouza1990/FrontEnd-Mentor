@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* Importando as fontes */
 @font-face {
     font-family: 'Outfit';
     src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
@@ -11,7 +10,6 @@
     src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
-/* Variáveis de cores */
 :root {
     --cor1: hsl(14, 45%, 36%);
     --cor2: hsl(332, 51%, 32%);
@@ -75,13 +73,11 @@ main ol {
     margin-bottom: 15px;
 }
 
-/* Estilos para itens de lista */
 main li {
     font-size: 1em;
     color: var(--Wenge-Brown);
 }
 
-/* Estilos específicos para a seção de preparação */
 .preparation {
     background: var(--Rose-White);
     border-radius: 0.75rem;
