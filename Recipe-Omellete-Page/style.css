@@ -211,6 +211,7 @@ h2 {
         padding-top: 0;
         padding: 10px;
         padding-right: 10px;
+        overflow-y: hidden;
     }
     
     main img {
