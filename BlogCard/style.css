@@ -79,19 +79,12 @@ p{
     font-size: 18px ;
 }
 
-.atribution{
 
-}
-/* Media Query para largura mínima de 375px */
 @media (min-width: 768px) {
     .container{
         width: 550px;
         padding: 10px;
     }
 }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px; /* Espaço entre card e footer */
-  } 
+
 
