@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(https://fonts.google.com/specimen/Figtree);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: white;
+    width: 375px;
+    text-align: start;
+    padding: 20px;
+    margin: 10vh;
+    border-radius: 15px;
+    box-shadow: 10px 12px;
+    border: 1.5px solid black;
+    font-family: 'Figtree';
+}
+
+img{
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 1.7em;
+    margin: 10px auto;
+}
+
+h1 > a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 > a:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+h4{
+    padding: 3px;
+    text-align: center;
+    border-radius: 7px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: hsl(47, 88%, 63%);
+}
+
+p{  
+    margin: 10px auto;
+}
+
+.p2{
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 50%);
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-bottom > img{
+    width: 45px;
+}
+
+.card-bottom h3{
+    padding: 10px;
+    font-size: 18px ;
+}
+
+.atribution{
+
+}
+/* Media Query para largura mínima de 375px */
+@media (min-width: 768px) {
+    .container{
+        width: 550px;
+        padding: 10px;
+    }
+}
+  
+  footer {
+    text-align: center;
+    margin-top: 20px; /* Espaço entre card e footer */
+  } 
+
